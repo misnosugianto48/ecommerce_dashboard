@@ -27,7 +27,6 @@ blinker<2,>=1.0.0
  python-dateutil<3,>=2.7.3
  requests<3,>=2.27
  rich<14,>=10.14.0
- <9,>=8.1.0
  toml<2,>=0.10.1
  typing-extensions<5,>=4.3.0 
  tzlocal<6,>=1.1 
