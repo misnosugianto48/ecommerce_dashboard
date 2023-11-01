@@ -63,7 +63,7 @@ def create_rfm_df(df):
 
 
 # load data
-all_df = pd.read_csv("main_data.csv", low_memory=False, dtype={
+all_df = pd.read_csv("https://raw.githubusercontent.com/misnosugianto48/ecommerce_dashboard/main/dashboard/main_data.csv", low_memory=False, dtype={
                      "product_length_cm": "object", "product_height_cm": "object", "product_width_cm": "object"})
 
 # pastikan datetime series
@@ -230,8 +230,8 @@ sns.barplot(y="recency", x="customer_id", data=rfm_df.sort_values(
 ax[0].set_ylabel(None)
 ax[0].set_xlabel("customer_id", fontsize=30)
 ax[0].set_title("By Recency (days)", loc="center", fontsize=50)
-ax[0].tick_params(axis='y', labelsize=30)
 ax[0].tick_params(axis='x', labelsize=35)
+ax[0].tick_params(axis='y', labelsize=30)
 ax[0].set_xticklabels(ax[0].get_xticklabels(), rotation=45,
                       horizontalalignment='right', fontsize=12)
 
